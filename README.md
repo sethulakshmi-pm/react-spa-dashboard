@@ -1,16 +1,35 @@
 # react-spa-dashboard Example
 
-This example shows how to [define pages](https://docs.instana.io/products/website_monitoring/api/#page) for websites
-making use of [React](https://reactjs.org/) with [react-router](https://reacttraining.com/react-router/).
+This example shows how to define pages for websites
+making use of React with react-router.
+- React SPA - without auto page detection.
+- A dynamic React-based single-page application (SPA) featuring a dashboard with key metrics and an interactive learning section. Explore topics on React, view live metrics, and dive deep into concepts. Designed for a smooth user experience, it offers easy navigation and real-time content updates.
 
-## How To Try This Example?
+## Demo
 
-```
-git clone https://github.com/instana/website-monitoring-examples.git
-cd website-monitoring-examples/examples/defining-pages/react-router
-npm install
-npm start
-```
+You can check out the live demo at [DEMO - Click Here.](https://react-spa-dashboard-without-apd.netlify.app/)
+
+## Features
+
+- **Dashboard:** Displays key metrics like active views, likes, comments, and published content.
+- **Topics Section:** Explore React learning topics such as "Build & Test", "Learn & Discover", and "Share Your Work".
+- **Smooth Navigation:** Single-page app with dynamic routing, providing a seamless experience without page reloads.
+- **Scrolling Notes:** A scrolling announcement feature to display real-time updates.
+
+## Installation
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org) (v12 or higher)
+- [npm](https://npmjs.com) (comes with Node.js)
+
+### Steps
+
+- **Clone the repository:** git clone https://github.com/sethulakshmi-pm/react-spa-dashboard.git
+- **Navigate to the project folder:** cd react-dashboard
+- **Install the dependencies:** npm install
+- **Start the development server:** npm start
+- **Open the app in your browser:** [localhost](http://localhost:3000)
 
 ## Where Is The Important Part?
 
@@ -28,9 +47,6 @@ customHistory.listen(location => {
   // eslint-disable-next-line no-undef
   ineum('page', location.pathname);
 
-  // Note that the above can result in many useless pages when you are making use of path parameters.
-  // In these cases you will have to define the page via different means, e.g. by creating a custom
-  // Route component which accepts a 'pageName' property.
 });
 
 …
@@ -39,3 +55,9 @@ customHistory.listen(location => {
  …
 </Router>
 ```
+
+![HomePage](src/img/home.png)
+![AboutPage](src/img/about.png)
+![ContactPage](src/img/contact_1.png)
+![ContactPage](src/img/contact_2.png)
+![ContactPage](src/img/contact_3.png)
