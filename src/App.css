@@ -1,0 +1,130 @@
+/* General Layout */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container for the app */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  background-color: #4CAF50;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 0 20px;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ffc107;
+}
+
+/* Page Content */
+.content-container {
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 40px;
+}
+
+.page {
+  text-align: center;
+  padding: 30px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.page-title {
+  font-size: 32px;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.topic-links {
+  list-style-type: none;
+  padding: 0;
+}
+
+.topic-link {
+  display: block;
+  margin: 10px 0;
+  font-size: 18px;
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.topic-link:hover {
+  color: #28a745;
+  transform: translateX(5px);
+}
+
+.select-topic {
+  font-size: 18px;
+  color: #6c757d;
+}
+
+.topic {
+  text-align: center;
+  padding: 20px;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.topic-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #343a40;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .content-container {
+    padding: 10px;
+  }
+
+  .page {
+    padding: 20px;
+  }
+}
